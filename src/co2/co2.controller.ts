@@ -1,8 +1,9 @@
 import { Body, Controller, Post, Res } from '@nestjs/common';
-import { CreateCo2ReportDto } from './dto';
+
 
 import { Response } from 'express';
 import { ReportService } from '../report/report.service';
+import { CreateCo2ReportDto } from './dto/create-co2-report.dto';
 
 @Controller('co2')
 export class Co2Controller {
