@@ -1,1 +1,31 @@
-<h1><%= report.name %></h1>
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Print to PDF</title>
+    <meta name="robots" content="noindex, nofollow">
+    <style>
+        h1 {
+            background-color: rebeccapurple;
+        }
+    </style>
+</head>
+<body>
+<h1 style='background-color: rebeccapurple'><%= report.dirname %></h1>
+    <table border='1'>
+        <tr>
+            <td>Customer:</td>
+            <td><%= report.customer %></td>
+            <td>Country:</td>
+            <td><%= report.country %></td>
+        </tr>
+        <tr>
+            <td>From:</td>
+            <td><%= report.startDate %></td>
+            <td>To (including):</td>
+            <td><%= report.endDate %></td>
+        </tr>
+    </table>
+</body>
+</html>

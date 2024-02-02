@@ -12,7 +12,7 @@ export class ReportService {
 
     await page.setContent(html);
 
-    const buffer: Buffer = await page.pdf( { format: 'A4' });
+    const buffer: Buffer = await page.pdf( { format: 'A4', landscape: true });
 
     await browser.close();
 
